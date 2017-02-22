@@ -3,4 +3,4 @@ machine:
     version:  openjdk7
 test:
   post:
-      - mvn deploy -Dusername=${username} -Dpassword=${password}
+      - mvn deploy -Dusername=admin -Dpassword=password
