@@ -6,4 +6,5 @@ machine:
     version:  openjdk7
 test:
   override:
-      - curl -uadmin:AP7toQka1BV6S2DpMjLQpBNCmtJ -T $CIRCLE_ARTIFACTS/webapp-maven-sample* "http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/generic-local/samplewebapp"
+      - cp -r . $CIRCLE_ARTIFACTS
+      - curl -uadmin:AP7toQka1BV6S2DpMjLQpBNCmtJ -T $CIRCLE_ARTIFACTS/* "http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/generic-local/samplewebapp"
