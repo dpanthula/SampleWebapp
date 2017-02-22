@@ -45,38 +45,6 @@
 
     <build>
         <plugins>
-             <plugin>
-                <groupId>org.jfrog.buildinfo</groupId>
-                <artifactId>artifactory-maven-plugin</artifactId>
-                <version>2.2.1</version>
-                <inherited>false</inherited>
-                <executions>
-                    <execution>
-                        <id>build-info</id>
-                        <goals>
-                            <goal>publish</goal>
-                        </goals>
-                        <configuration>
-                            <deployProperties>
-                                <gradle>awesome</gradle>
-                            </deployProperties>
-                            <artifactory>
-                                <includeEnvVars>true</includeEnvVars>
-                                <timeoutSec>60</timeoutSec>
-                                <propertiesFile>publish.properties</propertiesFile>
-                            </artifactory>
-                            <publisher>
-                                <contextUrl>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory</contextUrl>
-                                <username>admin</username>
-                                <password>password</password>
-                                <repoKey>libs-release-local</repoKey>
-                                <snapshotRepoKey>generic-local</snapshotRepoKey>
-                            </publisher>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-                 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
