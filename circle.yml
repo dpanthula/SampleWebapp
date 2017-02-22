@@ -1,5 +1,8 @@
 machine: 
   java:
     version:  openjdk7
+test:
+  post:
+      mvn deploy
 
 
