@@ -3,4 +3,4 @@ machine:
     version:  openjdk7
 test:
   override:
-      - mvn clean deploy -X -s settings.xml
+      - mvn clean deploy -s settings.xml
