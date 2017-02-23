@@ -101,11 +101,12 @@
 	<repository>
         <id>central</id>
         <name>localhost-releases</name>
-        <url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-release-local</url>
+        <url>http://sdgctgdevrepo.corp.intuit.net/nexus/content/repositories/ENG.CTG.Intuit-Releases</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>localhost-snapshots</name>
+	<uniqueVersion>false</uniqueVersion>
         <url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
