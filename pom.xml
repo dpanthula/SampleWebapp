@@ -101,7 +101,7 @@
 	<repository>
         <id>central</id>
         <name>localhost-releases</name>
-        <url>http://sdgctgdevrepo.corp.intuit.net/nexus/content/repositories/ENG.CTG.Intuit-Releases</url>
+        <url>http://nexus.intuit.net/nexus/content/repositories/ENG.CTG.Intuit-Releases</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
