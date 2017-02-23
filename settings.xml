@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>admin</username>
-      <password>AP7toQka1BV6S2DpMjLQpBNCmtJ</password>
+      <username>ctodev</username>
+      <password>ctodev</password>
       <id>central</id>
     </server>
     <server>
