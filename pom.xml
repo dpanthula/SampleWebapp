@@ -101,13 +101,13 @@
 	<repository>
         <id>central</id>
         <name>localhost-releases</name>
-        <url>http://nexus.intuit.net/nexus/content/repositories/ENG.CTG.Intuit-Releases</url>
+        <url>http://artifactory-demo-5-1-0-2046609603.us-west-2.elb.amazonaws.com/artifactory/libs-release-local</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>localhost-snapshots</name>
 	<uniqueVersion>false</uniqueVersion>
-        <url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot-local</url>
+        <url>http://artifactory-demo-5-1-0-2046609603.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
