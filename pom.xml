@@ -98,5 +98,10 @@
         <name>localhost-snapshots</name>
         <url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot</url>
     </snapshotRepository>
+    <repository>
+	<id>releases</id>
+             <name>localhost-releases</name>
+	<url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-release</url>
+    </repository>
 </distributionManagement>
 </project>
