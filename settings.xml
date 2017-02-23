@@ -1,9 +1,56 @@
-<settings>
-    <servers>
-        <server>
-            <id>snapshots</id>
-            <username>admin</username>
-            <password>password</password>
-        </server>
-    </servers>
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servers>
+    <server>
+      <username>admin</username>
+      <password>AP7toQka1BV6S2DpMjLQpBNCmtJ</password>
+      <id>central</id>
+    </server>
+    <server>
+      <username>admin</username>
+      <password>AP7toQka1BV6S2DpMjLQpBNCmtJ</password>
+      <id>snapshots</id>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>libs-snapshot</name>
+          <url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>libs-release</name>
+          <url>http://william-artifactory-625959512.us-west-2.elb.amazonaws.com/artifactory/libs-release</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
 </settings>
