@@ -13,4 +13,25 @@
       <id>snapshots</id>
     </server>
   </servers>
+    <profiles>
+		 <profile>
+		 <activation>
+        		 <activeByDefault>true</activeByDefault>
+		 </activation>
+        <repositories>
+            <repository>
+                <id>central-mirror</id>
+                <name>Nexus Public Repository</name>
+                <url>http://central</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                    <updatePolicy>always</updatePolicy>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
+</profiles>
 </settings>
