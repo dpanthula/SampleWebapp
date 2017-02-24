@@ -4,4 +4,4 @@ machine:
 test:
   override:
       - mvn package
-      - curl -uadmin:APAaP7EWAj3PPoWMKdnbuqUFKYH -T /home/ubuntu/SampleWebapp/target/webapp-maven-sample-2.0.0-SNAPSHOT.war "http://artifactory-demo-5-1-0-2046609603.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot-local/test"
+      - curl -uadmin:APAaP7EWAj3PPoWMKdnbuqUFKYH -T /home/ubuntu/SampleWebapp/target/webapp-maven-sample-2.0.0-SNAPSHOT.war "http://internal-artifactoryprivateelb-590472301.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot-local/test"
