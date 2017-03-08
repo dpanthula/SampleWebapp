@@ -3,5 +3,6 @@ machine:
     version:  openjdk7
 dependencies:
   override:
-      - mvn clean deploy -s settings.xml
+      - mvn package
+      - mvn deploy:deploy-file -Durl=http://internal-artifactoryprivateelb-590472301.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot-local -Dfile=/home/ubuntu/SampleWebapp/target/webapp-maven-sample-2.0.0-SNAPSHOT.war  -Dpackaging=war  -DartifactId=webapp-maven-sample -DgroupId=com.redhat.osas.example -DrepositoryId=snapshots -Dversion=2.0.0-SNAPSHOT
       
