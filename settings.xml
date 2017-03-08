@@ -3,13 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>admin</username>
-      <password>APAnHbzx8Ys3fGhny4b5d8rFaGu</password>
+      <username>${NEXUS_USERNAME}</username>
+      <password>${NEXUS_PASSWORD}</password>
       <id>central</id>
     </server>
     <server>
-      <username>admin</username>
-      <password>APAnHbzx8Ys3fGhny4b5d8rFaGu</password>
+      <username>${NEXUS_USERNAME}</username>
+      <password>${NEXUS_PASSWORD}</password>
       <id>snapshots</id>
     </server>
   </servers>
