@@ -116,7 +116,7 @@
                                             <propertiesFile>publish.properties</propertiesFile>
                                         </artifactory>
                                         <publisher>
-                                            <contextUrl>http://internal-ArtifactoryPrivateELB-590472301.us-west-2.elb.amazonaws.com/</contextUrl>
+                                            <contextUrl>http://artifactory-poc.intuit.com/artifactory</contextUrl>
                                             <username>${username}</username>
                                             <password>${password}</password>
                                             <excludePatterns>*-tests.jar</excludePatterns>
