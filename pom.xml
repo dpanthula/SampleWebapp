@@ -154,4 +154,24 @@
         <url>http://internal-ArtifactoryPrivateELB-590472301.us-west-2.elb.amazonaws.com/libs-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
+	<repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>bintray</name>
+            <url>http://jcenter.bintray.com</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>bintray-plugins</name>
+            <url>http://jcenter.bintray.com</url>
+        </pluginRepository>
+</pluginRepositories>
 </project>
