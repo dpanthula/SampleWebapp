@@ -116,7 +116,7 @@
                                             <propertiesFile>publish.properties</propertiesFile>
                                         </artifactory>
                                         <publisher>
-                                            <contextUrl>http://internal-ArtifactoryPrivateELB-590472301.us-west-2.elb.amazonaws.com/artifactory</contextUrl>
+                                            <contextUrl>http://internal-artifactory-private-elb-473495508.us-west-2.elb.amazonaws.com/artifactory</contextUrl>
                                             <username>${username}</username>
                                             <password>${password}</password>
                                             <excludePatterns>*-tests.jar</excludePatterns>
