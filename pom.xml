@@ -101,13 +101,13 @@
 	<repository>
         <id>central</id>
         <name>localhost-releases</name>
-        <url>http://internal-ArtifactoryPrivateELB-590472301.us-west-2.elb.amazonaws.com/artifactory/libs-releases-local</url>
+        <url>http://internal-artifactory-private-elb-473495508.us-west-2.elb.amazonaws.com/artifactory/libs-releases-local</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>localhost-snapshots</name>
 	<uniqueVersion>false</uniqueVersion>
-        <url>http://internal-ArtifactoryPrivateELB-590472301.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot-local</url>
+        <url>http://internal-artifactory-private-elb-473495508.us-west-2.elb.amazonaws.com/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
