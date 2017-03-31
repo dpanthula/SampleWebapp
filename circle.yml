@@ -5,6 +5,7 @@ machine:
     - docker
 dependencies:
   override:
+      - docker version
       - docker info
       - mvn package
       - mvn deploy -s settings.xml -Dusername=$NEXUS_USERNAME -Dpassword=$NEXUS_PASSWORD -DbuildNumber=$CIRCLE_BUILD_NUM -DbuildUrl=$CIRCLE_BUILD_URL
